@@ -1,0 +1,341 @@
+.g-wrap{
+	min-height: 100%;
+	width: 84%;
+	background-color: #ffffff;
+	background-image: url(../img/bg.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding: 0 8%;
+	position: relative;
+}
+.m-logo{
+	height: 1.5rem;
+	position: absolute;
+	left: 4%;
+	top: 1.5%;
+}
+.m-wrap-loading{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+	background: #fff;
+    z-index: 999;
+}
+.m-wrap-loading > div {
+    background-color: #4dbcc8;
+    height: 60px;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+    animation: stretchdelay 1.2s infinite ease-in-out;
+    margin-top: 60%;
+}
+.m-wrap-loading .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.m-wrap-loading .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.m-wrap-loading .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.m-wrap-loading .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+    20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }  20% {
+           transform: scaleY(1.0);
+           -webkit-transform: scaleY(1.0);
+       }
+}
+
+@-webkit-keyframes down {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes down {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.m-head{
+	color: #fff;
+	text-align: center;
+	padding-top: 4rem;
+	font-size: 1rem;
+	font-weight: inherit;
+	letter-spacing: 0.1rem;
+	margin-bottom: 10px;
+}
+.m-video{
+	overflow: hidden;
+	border-radius: 6px;
+	position: relative;
+	min-height: 12rem;
+}
+.m-video video{
+	display: block;
+	width: 100%;
+	border-radius: 6px;
+}
+.m-video img{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+.m-book-dsc{
+	display: flex;
+	border-radius: 6px;
+	color: #646464;
+	padding: 3rem 16%;
+	width: 88%;
+	margin-left: -10%;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin-top: 1.5rem;
+	position: relative;
+	background-image: url(../img/bookdsc-bg.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.m-book-header{
+	width: 6rem;
+	height: 2rem;
+	position: absolute;
+	left: 50%;
+	top: -1rem;
+	font-size: 1.15rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 2rem;
+	transform: translateX(-50%);
+	color: #938678;
+	text-shadow:-0.3em 0 #fbf1d6, 0 0.3em #fbf1d6, 0.3em 0 #fbf1d6, 0 -0.3em #fbf1d6;
+}
+.m-book-header>img{
+	display: block;
+	height: 2.2rem;
+	position: absolute;
+	left: -4.8rem;
+	top: -0.7rem;
+}
+.m-book-dsc>img{
+	display: block;
+	width: 7.57rem;
+	margin-right: 1rem;
+}
+.m-book-text h3{
+	color: #ffffff;
+	font-size: 1.2rem;
+	height: 2rem;
+	line-height: 2rem;
+	font-weight: bold;
+}
+.m-book-text h3 span{
+	font-size: 0.76rem;
+}
+.m-book-text>div span{
+	display: inline-block;
+	background-color: #b75245;
+	color: #fff;
+	padding: 0.2rem 0.5rem;
+	font-size: 0.65rem;
+	border-radius: 0.2rem;
+	margin-right: 0.2rem;
+}
+.m-book-text p{
+	font-size: 0.65rem;
+	line-height: 1.25rem;
+	margin-top: 0.8rem;
+	color: #fff;
+}
+.m-btn-getBook{
+	background-color: #3a5db6;
+	width: 100%;
+	height: 100%;
+	line-height: 3rem;
+	text-align: center;
+	border-radius: 3rem;
+	color: #fff;
+	font-size: 1.5rem;
+	letter-spacing: 0.1em;
+	cursor: pointer;
+	border: none;
+	margin: 2rem 0;
+}
+
+.m-form{
+	z-index: 500;
+	position: absolute;
+	margin: 0 auto;
+	top: 16%;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	background-image: url("../img/form-bg.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	width: 84%;
+	padding-bottom: 2rem;
+}
+.m-form>img.popo{
+	position: absolute;
+	display: block;
+	height: 10rem;
+	left: -2.1rem;
+	top: -1.5rem;
+}
+.m-form .m-form-header{
+	color: #fff;
+	font-size: 1.285rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	text-indent: 5em;
+}
+.m-form .m-form-header p:last-child{
+	color: #bad0e8;
+	font-size: 0.92rem;
+	margin-top: 0.3rem;
+}
+.m-form .m-form-content{
+	padding: 0 5%;
+}
+.m-form .m-form-content .m-form-item{
+	width: 100%;
+	height: 3rem;
+	background-color: #fff;
+	border-radius: 6px;
+	margin-bottom: 1.2rem;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	border: 1px solid #dfdcdc;
+}
+.m-form .m-form-content .m-form-item input{
+	display: block;
+	height: 100%;
+	width: 100%;
+	border: none;
+	outline: none;
+	text-indent: 1rem;
+	font-size: 1rem;
+}
+.m-form .m-form-content .m-form-item span{
+	display: block;
+	height: 2rem;
+	line-height: 2rem;
+	padding-left: 1rem;
+}
+.m-form .m-form-content .m-form-item span.getCode{
+	color: #344E8F;
+	border-left: 1px solid #344E8F;
+}
+.m-form .m-form-content .m-form-item span.countdown{
+	color: #666;
+	border-left: 1px solid #666;
+	display: none;
+}
+.m-form .m-form-content .m-btn-submit{
+	background-color: #344E8F;
+	color: #fff;
+	height: 3rem;
+	width: 100%;
+	border-radius: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	letter-spacing: 0.1em;
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+}
+.m-form .m-form-content .register{
+	text-align: right;
+}
+.m-form .m-form-content .register span{
+	font-size: 1rem;
+	color: #344E8F;
+}
+.m-form .m-close{
+	height: 3rem;
+	position: absolute;
+	left: 50%;
+	bottom: -5rem;
+	transform: translateX(-50%);
+	-webkit-transform:translateX(-50%);
+}
+/*遮盖层*/
+.mask{
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 400;
+}
+.getBook_ph,.getBook_wx{
+	display: none;
+}
+.getBook_ph .m-form-header{
+	color: #fff;
+	font-size: 1rem;
+	padding-top: 2.5rem;
+	padding-bottom: 1.5rem;
+	text-indent: 6em;
+}
+
+
+/*自定义提示框*/
+.j-pop{
+	color: #fff;
+	position: fixed;
+	background-color: rgba( 0, 0, 0,.7 );
+	border-radius: 2rem;
+	z-index: 800;
+	padding: 0.5rem 2rem;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}

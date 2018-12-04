@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>免费领取《中秋节》动画绘本</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/getBooks.css">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="format-detection" content="telephone=no">
+</head>
+<body>
+    <div class="g-wrap1">
+        <div class="m-book">
+            <h3>恭喜您，领书成功！</h3>
+            <p>《中秋节》动画绘本已送至您的书房</p>
+            <p>您的领取账号为 <span class="j-phone"></span></p>
+        </div>
+        <img class="arrow" src="./img/arrow.png" alt="">
+        <div class="m-main">
+            <img class="main" src="./img/main.png" alt="">
+        </div>
+        <div class="m-foot">
+            <div class="m-info">
+                <p class="u-header">请按照以下步骤查阅绘本</p>
+                <p class="u-info">1.下载咿啦看书APP，使用领取手机号进行登陆/注册</p>
+                <p class="u-info">2.点击底部导航栏进入【书房】查看已领取的绘本</p>
+            </div>
+            <div class="download-btn">
+                <div class="m-btn-wrap1">
+                    <a class="m-btn1" href="https://a.app.qq.com/o/simple.jsp?pkgname=com.ellabook">前往【咿啦看书】开始阅读</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/flexible.js"></script>
+<script>
+    (function () {
+        var search = window.location.search;
+        var phone = search.split('&')[0].split('=')[1];
+        var wx = search.split('&')[1].split('=')[1];
+        if (wx == '1') {
+            $('.m-book').find('p').last().html('<p>请使用微信直接登录“咿啦看书APP”查看</p>')
+        } else {
+            $('.j-phone').text(decodeURI(phone));
+        }
+    })();
+</script>
+</html>

@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>免费领取《中秋节》动画绘本</title>
+    <meta name="description" content="不一样的阅读体验，比动画片还好看的动画书">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta name="format-detection" content="telephone=no">
+</head>
+<body>
+<div id="loader" class="m-wrap-loading">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+</div>
+<div class="g-wrap">
+    <img class="m-logo" src="./img/logo.png" alt="">
+    <h3 class="m-head">免费领取《中秋节》动画绘本</h3>
+    <div class="m-video">
+        <img src="./img/video.png" alt="">
+        <video id="video" width="100%" controls="controls" x5-playsinline="" playsinline="" webkit-playsinline="" poster="./img/video.png" preload="auto" name="media">
+            <source src="http://book.ellabook.cn/book-preview-resource-video/B20180119044901.mp4" type="video/mp4" />
+        </video>
+    </div>
+    <div class="m-book-dsc">
+        <img src="./img/book.png" alt="">
+        <div class="m-book-text">
+            <h3>中秋节</h3>
+            <p>每年的农历八月十五是我国的传统节日中秋节，在这一天家家户户都要团聚在一起，赏月、吃月饼、玩花灯。但是小朋友们知道中秋节的由来吗？让我们一起在这本书里寻找答案吧！</p>
+        </div>
+    </div>
+    <button class="m-btn-getBook">领取绘本</button>
+    <div class="mask getBook_ph"></div>
+    <div class="mask getBook_wx"></div>
+    <div class="m-form getBook_wx">
+        <img class="popo" src="./img/popo.png" alt="">
+        <div class="m-form-header">
+            <p>绑定已有账号</p>
+            <p>若您是新用户可选择“跳过”</p>
+        </div>
+        <div class="m-form-content">
+            <div class="m-form-item">
+                <input id="phoneNum_wx" type="text" maxlength="11" placeholder="输入手机号码">
+            </div>
+            <div class="m-form-item">
+                <input id="password" type="password" placeholder="输入密码">
+            </div>
+            <div class="m-btn-submit m-btn-submit-wx">完成</div>
+            <div class="register">
+                <span id="register">跳过>></span>
+            </div>
+        </div>
+        <img class="m-close" src="./img/close.png" alt="">
+    </div>
+    <div class="m-form getBook_ph">
+        <img class="popo" src="./img/popo.png" alt="">
+        <div class="m-form-header">
+            请输入绘本领取信息
+        </div>
+        <div class="m-form-content">
+            <div class="m-form-item">
+                <input id="phoneNum_ph" style="width: 60%" type="text" maxlength="11" placeholder="输入手机号码">
+                <span class="getCode">获取验证码</span>
+                <span class="countdown">60s</span>
+            </div>
+            <div class="m-form-item">
+                <input id="VCode" style="width: 100%" type="text" maxlength="6" placeholder="输入验证码">
+            </div>
+            <div class="m-btn-submit m-btn-submit-ph">完成</div>
+        </div>
+        <img class="m-close" src="./img/close.png" alt="">
+    </div>
+</div>
+<div class="j-pop" style="display: none;"></div>
+<div style="display: none;">
+    <script src="https://s22.cnzz.com/z_stat.php?id=1264998448&web_id=1264998448" language="JavaScript"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?d82989125c2c40e2a60ea7123a21b2bf";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</div>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/md5.js"></script>
+<script src="js/flexible.js"></script>
+<script src="js/index.js?v=1"></script>
+<script>
+    $(window).load(function () {
+        $("#loader").fadeOut(1000);
+    });
+    page.init();
+</script>
+</body>
+</html>
